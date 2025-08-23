@@ -80,10 +80,18 @@ class StockCollector:
             if df is not None and not df.empty:
                 # Convert DataFrame to list of dictionaries
                 stock_records = []
-                for _, row in df.iterrows():
+                for index, row in df.iterrows():
+                    # Handle datetime index properly
+                    if hasattr(index, 'to_pydatetime'):
+                        date_value = index.to_pydatetime()
+                    elif isinstance(index, str):
+                        date_value = datetime.strptime(index, '%Y-%m-%d').date()
+                    else:
+                        date_value = datetime.utcnow().date()
+                    
                     record = {
                         'ticker': ticker,
-                        'date': row['Datetime'] if 'Datetime' in row else row.name,
+                        'date': date_value,
                         'open_price': float(row['Open']),
                         'high_price': float(row['High']),
                         'low_price': float(row['Low']),
@@ -115,10 +123,18 @@ class StockCollector:
             if df is not None and not df.empty:
                 # Convert DataFrame to list of dictionaries
                 stock_records = []
-                for _, row in df.iterrows():
+                for index, row in df.iterrows():
+                    # Handle datetime index properly
+                    if hasattr(index, 'to_pydatetime'):
+                        date_value = index.to_pydatetime()
+                    elif isinstance(index, str):
+                        date_value = datetime.strptime(index, '%Y-%m-%d %H:%M:%S')
+                    else:
+                        date_value = datetime.utcnow()
+                    
                     record = {
                         'ticker': ticker,
-                        'date': row['Datetime'] if 'Datetime' in row else row.name,
+                        'date': date_value,
                         'open_price': float(row['Open']),
                         'high_price': float(row['High']),
                         'low_price': float(row['Low']),

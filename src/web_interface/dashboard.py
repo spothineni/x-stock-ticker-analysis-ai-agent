@@ -287,11 +287,17 @@ DASHBOARD_HTML = """
         }
         
         function refreshDashboard() {
+            console.log('refreshDashboard() called');
             loadSystemStatus();
+            console.log('loadSystemStatus() called');
             loadMarketOverview();
+            console.log('loadMarketOverview() called');
             loadTickerData();
+            console.log('loadTickerData() called');
             loadPredictions();
+            console.log('loadPredictions() called');
             updateTimestamp();
+            console.log('updateTimestamp() called');
         }
         
         function loadSystemStatus() {
@@ -319,82 +325,140 @@ DASHBOARD_HTML = """
         }
         
         function loadMarketOverview() {
+            console.log('loadMarketOverview() function started');
+            $('#marketOverview').html('<div>Loading market data...</div>');
+            
             $.get('/api/market-summary')
                 .done(function(data) {
-                    if (data.success) {
-                        const summary = data.market_summary;
-                        const sentiment = summary.sentiment_overview;
-                        
-                        let html = '<div>';
-                        html += `<div class="ticker-info"><span>Tickers Analyzed:</span><span>${summary.tickers_analyzed}</span></div>`;
-                        html += `<div class="ticker-info"><span>Average Sentiment:</span><span class="${getSentimentClass(sentiment.avg_sentiment)}">${sentiment.avg_sentiment.toFixed(3)}</span></div>`;
-                        html += `<div class="ticker-info"><span>Total Tweets:</span><span>${sentiment.total_tweets_analyzed}</span></div>`;
-                        html += '</div>';
-                        
-                        $('#marketOverview').html(html);
-                        
-                        // Update sentiment chart
-                        updateSentimentChart(sentiment.sentiment_distribution);
-                    }
+                    console.log('loadMarketOverview() API call successful:', data);
+                    $('#marketOverview').html('<div>API call successful! Processing data...</div>');
+                    
+                    setTimeout(function() {
+                        try {
+                            if (data.success) {
+                                const summary = data.market_summary;
+                                const sentiment = summary.sentiment_overview;
+                                
+                                let html = '<div>';
+                                html += `<div class="ticker-info"><span>Tickers Analyzed:</span><span>${summary.tickers_analyzed}</span></div>`;
+                                html += `<div class="ticker-info"><span>Average Sentiment:</span><span class="${getSentimentClass(sentiment.avg_sentiment)}">${sentiment.avg_sentiment.toFixed(3)}</span></div>`;
+                                html += `<div class="ticker-info"><span>Total Tweets:</span><span>${sentiment.total_tweets_analyzed}</span></div>`;
+                                html += '</div>';
+                                
+                                $('#marketOverview').html(html);
+                                console.log('Market overview HTML updated');
+                                
+                                // Update sentiment chart
+                                console.log('About to update sentiment chart with:', sentiment.sentiment_distribution);
+                                updateSentimentChart(sentiment.sentiment_distribution);
+                                console.log('Sentiment chart updated');
+                            } else {
+                                console.error('API returned success=false');
+                                $('#marketOverview').html('<div class="error">API returned error</div>');
+                            }
+                        } catch (error) {
+                            console.error('Error processing market overview data:', error);
+                            $('#marketOverview').html('<div class="error">Error processing data: ' + error.message + '</div>');
+                        }
+                    }, 100);
                 })
-                .fail(function() {
+                .fail(function(xhr, status, error) {
+                    console.error('loadMarketOverview() API call failed:', error);
                     $('#marketOverview').html('<div class="error">Failed to load market data</div>');
                 });
         }
         
         function loadTickerData() {
+            console.log('loadTickerData() function started');
+            $('#tickerGrid').html('<div>Loading ticker data...</div>');
+            
             $.get('/api/tickers')
                 .done(function(data) {
-                    const tickers = data.tickers;
-                    let html = '';
+                    console.log('loadTickerData() API call successful:', data);
+                    $('#tickerGrid').html('<div>API call successful! Found ' + data.tickers.length + ' tickers. Loading analysis...</div>');
                     
-                    tickers.forEach(ticker => {
-                        loadTickerAnalysis(ticker);
-                    });
+                    const tickers = data.tickers;
+                    
+                    setTimeout(function() {
+                        // Clear the loading message
+                        $('#tickerGrid').empty();
+                        
+                        tickers.forEach(ticker => {
+                            loadTickerAnalysis(ticker);
+                        });
+                    }, 100);
+                })
+                .fail(function(xhr, status, error) {
+                    console.error('loadTickerData() API call failed:', error);
+                    $('#tickerGrid').html('<div class="error">Failed to load ticker data</div>');
                 });
         }
         
         function loadTickerAnalysis(ticker) {
+            console.log(`loadTickerAnalysis() called for ${ticker}`);
             $.get(`/api/ticker/${ticker}/analysis`)
                 .done(function(data) {
+                    console.log(`API call successful for ${ticker}:`, data);
                     if (data.success) {
                         const analysis = data.analysis;
+                        console.log(`Creating ticker card for ${ticker}`);
                         const html = createTickerCard(ticker, analysis);
+                        console.log(`Ticker card HTML created for ${ticker}:`, html.substring(0, 100) + '...');
                         
                         // Update or add ticker card
                         const existingCard = $(`#ticker-${ticker}`);
                         if (existingCard.length) {
+                            console.log(`Replacing existing card for ${ticker}`);
                             existingCard.replaceWith(html);
                         } else {
+                            console.log(`Appending new card for ${ticker}`);
                             $('#tickerGrid').append(html);
                         }
+                        console.log(`Ticker card added for ${ticker}`);
+                    } else {
+                        console.error(`Failed to load analysis for ${ticker}:`, data);
+                        $('#tickerGrid').append(`<div>Error loading ${ticker}: API returned success=false</div>`);
                     }
+                })
+                .fail(function(xhr, status, error) {
+                    console.error(`Error loading analysis for ${ticker}:`, error);
+                    $('#tickerGrid').append(`<div>Error loading ${ticker}: ${error}</div>`);
                 });
         }
         
         function createTickerCard(ticker, analysis) {
+            console.log(`Creating ticker card for ${ticker}:`, analysis);
+            
             const sentimentClass = getSentimentClass(analysis.avg_sentiment);
             const priceClass = analysis.price_change_percent > 0 ? 'positive' : 
                               analysis.price_change_percent < 0 ? 'negative' : 'neutral';
+            
+            // Safe formatting with fallbacks for NaN/null values
+            const avgSentiment = (analysis.avg_sentiment != null && !isNaN(analysis.avg_sentiment)) ? 
+                                analysis.avg_sentiment.toFixed(3) : '0.000';
+            const priceChange = (analysis.price_change_percent != null && !isNaN(analysis.price_change_percent)) ? 
+                               analysis.price_change_percent.toFixed(2) : '0.00';
+            const volumeChange = (analysis.volume_change_percent != null && !isNaN(analysis.volume_change_percent)) ? 
+                                analysis.volume_change_percent.toFixed(1) : '0.0';
             
             return `
                 <div class="ticker-card" id="ticker-${ticker}">
                     <div class="ticker-symbol">${ticker}</div>
                     <div class="ticker-info">
                         <span>Sentiment:</span>
-                        <span class="${sentimentClass}">${analysis.avg_sentiment.toFixed(3)}</span>
+                        <span class="${sentimentClass}">${avgSentiment}</span>
                     </div>
                     <div class="ticker-info">
                         <span>Price Change:</span>
-                        <span class="${priceClass}">${analysis.price_change_percent.toFixed(2)}%</span>
+                        <span class="${priceClass}">${priceChange}%</span>
                     </div>
                     <div class="ticker-info">
                         <span>Tweets:</span>
-                        <span>${analysis.tweet_count}</span>
+                        <span>${analysis.tweet_count || 0}</span>
                     </div>
                     <div class="ticker-info">
                         <span>Volume Change:</span>
-                        <span>${analysis.volume_change_percent.toFixed(1)}%</span>
+                        <span>${volumeChange}%</span>
                     </div>
                 </div>
             `;
@@ -449,33 +513,45 @@ DASHBOARD_HTML = """
         }
         
         function updateSentimentChart(distribution) {
-            const ctx = document.getElementById('sentimentChart').getContext('2d');
-            
-            if (sentimentChart) {
-                sentimentChart.destroy();
-            }
-            
-            sentimentChart = new Chart(ctx, {
-                type: 'doughnut',
-                data: {
-                    labels: ['Positive', 'Negative', 'Neutral'],
-                    datasets: [{
-                        data: [distribution.positive, distribution.negative, distribution.neutral],
-                        backgroundColor: ['#27ae60', '#e74c3c', '#95a5a6'],
-                        borderWidth: 2,
-                        borderColor: '#fff'
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: {
-                        legend: {
-                            position: 'bottom'
+            try {
+                console.log('updateSentimentChart() called with:', distribution);
+                const ctx = document.getElementById('sentimentChart').getContext('2d');
+                
+                if (sentimentChart) {
+                    sentimentChart.destroy();
+                }
+                
+                // Handle case where all values are 0 - show a placeholder chart
+                const hasData = distribution.positive > 0 || distribution.negative > 0 || distribution.neutral > 0;
+                const chartData = hasData ? 
+                    [distribution.positive, distribution.negative, distribution.neutral] :
+                    [1, 1, 1]; // Equal placeholder values when no data
+                
+                sentimentChart = new Chart(ctx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Positive', 'Negative', 'Neutral'],
+                        datasets: [{
+                            data: chartData,
+                            backgroundColor: hasData ? ['#27ae60', '#e74c3c', '#95a5a6'] : ['#ddd', '#ddd', '#ddd'],
+                            borderWidth: 2,
+                            borderColor: '#fff'
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                position: 'bottom'
+                            }
                         }
                     }
-                }
-            });
+                });
+                console.log('Sentiment chart created successfully');
+            } catch (error) {
+                console.error('Error creating sentiment chart:', error);
+            }
         }
         
         function getSentimentClass(sentiment) {

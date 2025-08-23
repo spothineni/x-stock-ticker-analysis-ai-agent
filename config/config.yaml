@@ -1,0 +1,68 @@
+app:
+  name: "Stock Sentiment Analyzer"
+  version: "1.0.0"
+  debug: true
+
+data_collection:
+  twitter:
+    max_tweets_per_ticker: 100
+    search_days_back: 1
+    rate_limit_delay: 15  # seconds
+  
+  stock_tickers:
+    - "AAPL"
+    - "GOOGL"
+    - "MSFT"
+    - "TSLA"
+    - "AMZN"
+    - "META"
+    - "NVDA"
+    - "NFLX"
+    - "AMD"
+    - "INTC"
+  
+  stock_data:
+    period: "1d"
+    interval: "1m"
+
+sentiment_analysis:
+  models:
+    - "textblob"
+    - "vader"
+    - "transformers"  # FinBERT for financial sentiment
+  
+  confidence_threshold: 0.6
+  
+forecasting:
+  models:
+    - "linear_regression"
+    - "random_forest"
+    - "lstm"
+  
+  features:
+    - "sentiment_score"
+    - "tweet_volume"
+    - "price_change"
+    - "volume"
+    - "volatility"
+  
+  prediction_horizon: 1  # days
+
+database:
+  type: "sqlite"
+  path: "data/stock_sentiment.db"
+  
+logging:
+  level: "INFO"
+  format: "{time:YYYY-MM-DD HH:mm:ss} | {level} | {name}:{function}:{line} - {message}"
+  rotation: "1 day"
+  retention: "30 days"
+
+web_interface:
+  host: "0.0.0.0"
+  port: 12000
+  cors_origins: ["*"]
+  
+scheduler:
+  daily_analysis_time: "09:00"
+  timezone: "UTC"

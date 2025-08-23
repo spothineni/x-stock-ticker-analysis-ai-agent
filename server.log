@@ -1,0 +1,422 @@
+2025-08-23 03:22:14 | INFO | src.utils.database:__init__:87 - Database initialized successfully
+2025-08-23 03:22:15 | WARNING | src.data_collection.twitter_collector:__init__:22 - Twitter Bearer Token not found. Please set TWITTER_BEARER_TOKEN in .env file
+2025-08-23 03:22:15 | INFO | src.data_collection.stock_collector:__init__:18 - Stock collector initialized for 10 tickers
+2025-08-23 03:22:15 | INFO | src.sentiment_analysis.sentiment_analyzer:__init__:31 - Sentiment analyzer initialized with multiple models
+2025-08-23 03:22:15 | INFO | src.stock_analysis.analyzer:__init__:22 - Stock analyzer initialized
+2025-08-23 03:22:15 | INFO | src.stock_analysis.analyzer:__init__:22 - Stock analyzer initialized
+2025-08-23 03:22:15 | INFO | src.stock_analysis.predictor:__init__:36 - Stock predictor initialized
+2025-08-23 03:22:15 | INFO | src.forecasting.daily_forecaster:__init__:31 - Daily forecaster initialized
+2025-08-23 03:22:15 | INFO | src.forecasting.report_generator:__init__:28 - Report generator initialized
+2025-08-23 03:22:15 | WARNING | src.data_collection.twitter_collector:__init__:22 - Twitter Bearer Token not found. Please set TWITTER_BEARER_TOKEN in .env file
+2025-08-23 03:22:15 | INFO | src.data_collection.stock_collector:__init__:18 - Stock collector initialized for 10 tickers
+2025-08-23 03:22:15 | INFO | src.sentiment_analysis.sentiment_analyzer:__init__:31 - Sentiment analyzer initialized with multiple models
+2025-08-23 03:22:15 | INFO | src.stock_analysis.analyzer:__init__:22 - Stock analyzer initialized
+2025-08-23 03:22:15 | INFO | src.stock_analysis.analyzer:__init__:22 - Stock analyzer initialized
+2025-08-23 03:22:15 | INFO | src.stock_analysis.predictor:__init__:36 - Stock predictor initialized
+2025-08-23 03:22:15 | INFO | __main__:run_web_server:20 - Starting Stock Sentiment Analyzer web server
+2025-08-23 03:22:15 | INFO | src.web_interface.app:create_app:33 - Flask application created and configured
+2025-08-23 03:22:15 | INFO | __main__:run_web_server:26 - Web server starting on 0.0.0.0:12001
+ * Serving Flask app 'src.web_interface.app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:12001
+ * Running on http://10.2.42.12:12001
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+2025-08-23 03:22:16 | INFO | src.utils.database:__init__:87 - Database initialized successfully
+2025-08-23 03:22:17 | WARNING | src.data_collection.twitter_collector:__init__:22 - Twitter Bearer Token not found. Please set TWITTER_BEARER_TOKEN in .env file
+2025-08-23 03:22:17 | INFO | src.data_collection.stock_collector:__init__:18 - Stock collector initialized for 10 tickers
+2025-08-23 03:22:17 | INFO | src.sentiment_analysis.sentiment_analyzer:__init__:31 - Sentiment analyzer initialized with multiple models
+2025-08-23 03:22:17 | INFO | src.stock_analysis.analyzer:__init__:22 - Stock analyzer initialized
+2025-08-23 03:22:17 | INFO | src.stock_analysis.analyzer:__init__:22 - Stock analyzer initialized
+2025-08-23 03:22:17 | INFO | src.stock_analysis.predictor:__init__:36 - Stock predictor initialized
+2025-08-23 03:22:17 | INFO | src.forecasting.daily_forecaster:__init__:31 - Daily forecaster initialized
+2025-08-23 03:22:17 | INFO | src.forecasting.report_generator:__init__:28 - Report generator initialized
+2025-08-23 03:22:17 | WARNING | src.data_collection.twitter_collector:__init__:22 - Twitter Bearer Token not found. Please set TWITTER_BEARER_TOKEN in .env file
+2025-08-23 03:22:17 | INFO | src.data_collection.stock_collector:__init__:18 - Stock collector initialized for 10 tickers
+2025-08-23 03:22:17 | INFO | src.sentiment_analysis.sentiment_analyzer:__init__:31 - Sentiment analyzer initialized with multiple models
+2025-08-23 03:22:17 | INFO | src.stock_analysis.analyzer:__init__:22 - Stock analyzer initialized
+2025-08-23 03:22:17 | INFO | src.stock_analysis.analyzer:__init__:22 - Stock analyzer initialized
+2025-08-23 03:22:17 | INFO | src.stock_analysis.predictor:__init__:36 - Stock predictor initialized
+2025-08-23 03:22:17 | INFO | __main__:run_web_server:20 - Starting Stock Sentiment Analyzer web server
+2025-08-23 03:22:17 | INFO | src.web_interface.app:create_app:33 - Flask application created and configured
+2025-08-23 03:22:17 | INFO | __main__:run_web_server:26 - Web server starting on 0.0.0.0:12001
+ * Debugger is active!
+ * Debugger PIN: 714-241-967
+127.0.0.1 - - [23/Aug/2025 03:22:22] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2025 03:22:25] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2025 03:22:25] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2025 03:22:25] "GET /api/forecast-summary HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2025 03:22:25] "GET /api/tickers HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2025 03:22:25] "GET /api/tickers HTTP/1.1" 200 -
+2025-08-23 03:22:25 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for GOOGL
+2025-08-23 03:22:25 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for AAPL
+2025-08-23 03:22:25 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for TSLA
+2025-08-23 03:22:25 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for AMZN
+2025-08-23 03:22:25 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for MSFT
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for GOOGL
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for AAPL
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for MSFT
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for TSLA
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of GOOGL
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for AMZN
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of AAPL
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of MSFT
+127.0.0.1 - - [23/Aug/2025 03:22:25] "[33mGET /api/ticker/MSFT/analysis HTTP/1.1[0m" 404 -
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of TSLA
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of AMZN
+127.0.0.1 - - [23/Aug/2025 03:22:25] "[33mGET /api/ticker/AAPL/analysis HTTP/1.1[0m" 404 -
+127.0.0.1 - - [23/Aug/2025 03:22:25] "[33mGET /api/ticker/GOOGL/analysis HTTP/1.1[0m" 404 -
+127.0.0.1 - - [23/Aug/2025 03:22:25] "[33mGET /api/ticker/TSLA/analysis HTTP/1.1[0m" 404 -
+127.0.0.1 - - [23/Aug/2025 03:22:25] "[33mGET /api/ticker/AMZN/analysis HTTP/1.1[0m" 404 -
+2025-08-23 03:22:25 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for META
+2025-08-23 03:22:25 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for NVDA
+2025-08-23 03:22:25 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for NFLX
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for META
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of META
+127.0.0.1 - - [23/Aug/2025 03:22:25] "[33mGET /api/ticker/META/analysis HTTP/1.1[0m" 404 -
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for NVDA
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of NVDA
+127.0.0.1 - - [23/Aug/2025 03:22:25] "[33mGET /api/ticker/NVDA/analysis HTTP/1.1[0m" 404 -
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for NFLX
+2025-08-23 03:22:25 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for AMD
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of NFLX
+127.0.0.1 - - [23/Aug/2025 03:22:25] "[33mGET /api/ticker/NFLX/analysis HTTP/1.1[0m" 404 -
+2025-08-23 03:22:25 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for INTC
+2025-08-23 03:22:25 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for AAPL
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for INTC
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for AMD
+2025-08-23 03:22:25 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for GOOGL
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for AAPL
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of INTC
+127.0.0.1 - - [23/Aug/2025 03:22:25] "[33mGET /api/ticker/INTC/analysis HTTP/1.1[0m" 404 -
+2025-08-23 03:22:25 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for MSFT
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of AMD
+127.0.0.1 - - [23/Aug/2025 03:22:25] "[33mGET /api/ticker/AMD/analysis HTTP/1.1[0m" 404 -
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for AAPL
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for GOOGL
+127.0.0.1 - - [23/Aug/2025 03:22:25] "GET /api/ticker/AAPL/prediction HTTP/1.1" 200 -
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for MSFT
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for MSFT
+127.0.0.1 - - [23/Aug/2025 03:22:25] "GET /api/ticker/MSFT/prediction HTTP/1.1" 200 -
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for GOOGL
+127.0.0.1 - - [23/Aug/2025 03:22:25] "GET /api/ticker/GOOGL/prediction HTTP/1.1" 200 -
+2025-08-23 03:22:25 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for TSLA
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for TSLA
+2025-08-23 03:22:25 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for META
+2025-08-23 03:22:25 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for AMZN
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for TSLA
+2025-08-23 03:22:25 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for NVDA
+127.0.0.1 - - [23/Aug/2025 03:22:25] "GET /api/ticker/TSLA/prediction HTTP/1.1" 200 -
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for META
+2025-08-23 03:22:25 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for NFLX
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for AMZN
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for META
+127.0.0.1 - - [23/Aug/2025 03:22:25] "GET /api/ticker/META/prediction HTTP/1.1" 200 -
+2025-08-23 03:22:25 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for AMD
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for NVDA
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for AMZN
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for NFLX
+127.0.0.1 - - [23/Aug/2025 03:22:25] "GET /api/ticker/AMZN/prediction HTTP/1.1" 200 -
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for NVDA
+127.0.0.1 - - [23/Aug/2025 03:22:25] "GET /api/ticker/NVDA/prediction HTTP/1.1" 200 -
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for AMD
+2025-08-23 03:22:25 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for INTC
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for AMD
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for NFLX
+127.0.0.1 - - [23/Aug/2025 03:22:25] "GET /api/ticker/AMD/prediction HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2025 03:22:25] "GET /api/ticker/NFLX/prediction HTTP/1.1" 200 -
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for INTC
+2025-08-23 03:22:25 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for INTC
+127.0.0.1 - - [23/Aug/2025 03:22:25] "GET /api/ticker/INTC/prediction HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2025 03:22:27] "GET /api/market-summary HTTP/1.1" 200 -
+2025-08-23 03:22:37 | INFO | src.web_interface.api:collect_data:262 - Manual data collection triggered via API
+2025-08-23 03:22:37 | INFO | src.forecasting.daily_forecaster:collect_daily_data:35 - Starting daily data collection
+2025-08-23 03:22:37 | WARNING | src.forecasting.daily_forecaster:collect_daily_data:62 - Twitter API not available, skipping tweet collection
+2025-08-23 03:22:37 | INFO | src.forecasting.daily_forecaster:collect_daily_data:66 - Collecting stock data...
+2025-08-23 03:22:37 | INFO | src.data_collection.stock_collector:collect_daily_data:75 - Collecting stock data for AAPL
+2025-08-23 03:22:38 | INFO | src.data_collection.stock_collector:get_stock_data:38 - Retrieved 1 data points for AAPL
+2025-08-23 03:22:38 | INFO | src.data_collection.stock_collector:collect_daily_data:75 - Collecting stock data for GOOGL
+2025-08-23 03:22:38 | INFO | src.data_collection.stock_collector:get_stock_data:38 - Retrieved 1 data points for GOOGL
+2025-08-23 03:22:38 | INFO | src.data_collection.stock_collector:collect_daily_data:75 - Collecting stock data for MSFT
+2025-08-23 03:22:38 | INFO | src.data_collection.stock_collector:get_stock_data:38 - Retrieved 1 data points for MSFT
+2025-08-23 03:22:38 | INFO | src.data_collection.stock_collector:collect_daily_data:75 - Collecting stock data for TSLA
+2025-08-23 03:22:38 | INFO | src.data_collection.stock_collector:get_stock_data:38 - Retrieved 1 data points for TSLA
+2025-08-23 03:22:38 | INFO | src.data_collection.stock_collector:collect_daily_data:75 - Collecting stock data for AMZN
+2025-08-23 03:22:38 | INFO | src.data_collection.stock_collector:get_stock_data:38 - Retrieved 1 data points for AMZN
+2025-08-23 03:22:38 | INFO | src.data_collection.stock_collector:collect_daily_data:75 - Collecting stock data for META
+2025-08-23 03:22:38 | INFO | src.data_collection.stock_collector:get_stock_data:38 - Retrieved 1 data points for META
+2025-08-23 03:22:38 | INFO | src.data_collection.stock_collector:collect_daily_data:75 - Collecting stock data for NVDA
+2025-08-23 03:22:38 | INFO | src.data_collection.stock_collector:get_stock_data:38 - Retrieved 1 data points for NVDA
+2025-08-23 03:22:38 | INFO | src.data_collection.stock_collector:collect_daily_data:75 - Collecting stock data for NFLX
+2025-08-23 03:22:38 | INFO | src.data_collection.stock_collector:get_stock_data:38 - Retrieved 1 data points for NFLX
+2025-08-23 03:22:38 | INFO | src.data_collection.stock_collector:collect_daily_data:75 - Collecting stock data for AMD
+2025-08-23 03:22:38 | INFO | src.data_collection.stock_collector:get_stock_data:38 - Retrieved 1 data points for AMD
+2025-08-23 03:22:38 | INFO | src.data_collection.stock_collector:collect_daily_data:75 - Collecting stock data for INTC
+2025-08-23 03:22:39 | INFO | src.data_collection.stock_collector:get_stock_data:38 - Retrieved 1 data points for INTC
+2025-08-23 03:22:39 | INFO | src.data_collection.stock_collector:collect_daily_data:101 - Collected 10 stock data records across 10 tickers
+2025-08-23 03:22:39 | ERROR | src.utils.database:save_stock_data:167 - Error saving stock data: (builtins.TypeError) SQLite DateTime type only accepts Python datetime and date objects as input.
+[SQL: INSERT INTO stock_data (ticker, date, open_price, high_price, low_price, close_price, volume, adj_close) VALUES (?, ?, ?, ?, ?, ?, ?, ?) RETURNING id]
+[parameters: [{'open_price': 226.1699981689453, 'close_price': 227.75999450683594, 'low_price': 225.41000366210938, 'date': 0, 'high_price': 229.08999633789062, 'adj_close': 227.75999450683594, 'volume': 42445300, 'ticker': 'AAPL'}, {'open_price': 202.72999572753906, 'close_price': 206.08999633789062, 'low_price': 201.3000030517578, 'date': 0, 'high_price': 208.5399932861328, 'adj_close': 206.08999633789062, 'volume': 42782300, 'ticker': 'GOOGL'}, {'open_price': 504.25, 'close_price': 507.2300109863281, 'low_price': 502.4100036621094, 'date': 0, 'high_price': 510.7300109863281, 'adj_close': 507.2300109863281, 'volume': 24309100, 'ticker': 'MSFT'}, {'open_price': 321.6600036621094, 'close_price': 340.010009765625, 'low_price': 319.69000244140625, 'date': 0, 'high_price': 340.25, 'adj_close': 340.010009765625, 'volume': 93588800, 'ticker': 'TSLA'}, {'open_price': 222.7899932861328, 'close_price': 228.83999633789062, 'low_price': 220.82000732421875, 'date': 0, 'high_price': 229.13999938964844, 'adj_close': 228.83999633789062, 'volume': 37274600, 'ticker': 'AMZN'}, {'open_price': 739.22998046875, 'close_price': 754.7899780273438, 'low_price': 734.3900146484375, 'date': 0, 'high_price': 756.9000244140625, 'adj_close': 754.7899780273438, 'volume': 10594400, 'ticker': 'META'}, {'open_price': 172.61000061035156, 'close_price': 177.99000549316406, 'low_price': 171.1999969482422, 'date': 0, 'high_price': 178.58999633789062, 'adj_close': 177.99000549316406, 'volume': 172334200, 'ticker': 'NVDA'}, {'open_price': 1208.8800048828125, 'close_price': 1204.6500244140625, 'low_price': 1198.22998046875, 'date': 0, 'high_price': 1213.6199951171875, 'adj_close': 1204.6500244140625, 'volume': 3123600, 'ticker': 'NFLX'}, {'open_price': 162.1699981689453, 'close_price': 167.75999450683594, 'low_price': 161.8000030517578, 'date': 0, 'high_price': 168.52999877929688, 'adj_close': 167.75999450683594, 'volume': 43900300, 'ticker': 'AMD'}, {'open_price': 23.649999618530273, 'close_price': 24.799999237060547, 'low_price': 23.649999618530273, 'date': 0, 'high_price': 25.229999542236328, 'adj_close': 24.799999237060547, 'volume': 197891400, 'ticker': 'INTC'}]]
+2025-08-23 03:22:39 | ERROR | src.forecasting.daily_forecaster:collect_daily_data:84 - Error during data collection: (builtins.TypeError) SQLite DateTime type only accepts Python datetime and date objects as input.
+[SQL: INSERT INTO stock_data (ticker, date, open_price, high_price, low_price, close_price, volume, adj_close) VALUES (?, ?, ?, ?, ?, ?, ?, ?) RETURNING id]
+[parameters: [{'open_price': 226.1699981689453, 'close_price': 227.75999450683594, 'low_price': 225.41000366210938, 'date': 0, 'high_price': 229.08999633789062, 'adj_close': 227.75999450683594, 'volume': 42445300, 'ticker': 'AAPL'}, {'open_price': 202.72999572753906, 'close_price': 206.08999633789062, 'low_price': 201.3000030517578, 'date': 0, 'high_price': 208.5399932861328, 'adj_close': 206.08999633789062, 'volume': 42782300, 'ticker': 'GOOGL'}, {'open_price': 504.25, 'close_price': 507.2300109863281, 'low_price': 502.4100036621094, 'date': 0, 'high_price': 510.7300109863281, 'adj_close': 507.2300109863281, 'volume': 24309100, 'ticker': 'MSFT'}, {'open_price': 321.6600036621094, 'close_price': 340.010009765625, 'low_price': 319.69000244140625, 'date': 0, 'high_price': 340.25, 'adj_close': 340.010009765625, 'volume': 93588800, 'ticker': 'TSLA'}, {'open_price': 222.7899932861328, 'close_price': 228.83999633789062, 'low_price': 220.82000732421875, 'date': 0, 'high_price': 229.13999938964844, 'adj_close': 228.83999633789062, 'volume': 37274600, 'ticker': 'AMZN'}, {'open_price': 739.22998046875, 'close_price': 754.7899780273438, 'low_price': 734.3900146484375, 'date': 0, 'high_price': 756.9000244140625, 'adj_close': 754.7899780273438, 'volume': 10594400, 'ticker': 'META'}, {'open_price': 172.61000061035156, 'close_price': 177.99000549316406, 'low_price': 171.1999969482422, 'date': 0, 'high_price': 178.58999633789062, 'adj_close': 177.99000549316406, 'volume': 172334200, 'ticker': 'NVDA'}, {'open_price': 1208.8800048828125, 'close_price': 1204.6500244140625, 'low_price': 1198.22998046875, 'date': 0, 'high_price': 1213.6199951171875, 'adj_close': 1204.6500244140625, 'volume': 3123600, 'ticker': 'NFLX'}, {'open_price': 162.1699981689453, 'close_price': 167.75999450683594, 'low_price': 161.8000030517578, 'date': 0, 'high_price': 168.52999877929688, 'adj_close': 167.75999450683594, 'volume': 43900300, 'ticker': 'AMD'}, {'open_price': 23.649999618530273, 'close_price': 24.799999237060547, 'low_price': 23.649999618530273, 'date': 0, 'high_price': 25.229999542236328, 'adj_close': 24.799999237060547, 'volume': 197891400, 'ticker': 'INTC'}]]
+127.0.0.1 - - [23/Aug/2025 03:22:39] "POST /api/collect-data HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2025 03:22:39] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2025 03:22:39] "GET /api/tickers HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2025 03:22:39] "GET /api/tickers HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2025 03:22:39] "GET /api/forecast-summary HTTP/1.1" 200 -
+2025-08-23 03:22:39 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for AAPL
+2025-08-23 03:22:39 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for GOOGL
+2025-08-23 03:22:39 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for TSLA
+2025-08-23 03:22:39 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for MSFT
+2025-08-23 03:22:39 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for AMZN
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for AAPL
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of AAPL
+127.0.0.1 - - [23/Aug/2025 03:22:39] "[33mGET /api/ticker/AAPL/analysis HTTP/1.1[0m" 404 -
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for GOOGL
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of GOOGL
+127.0.0.1 - - [23/Aug/2025 03:22:39] "[33mGET /api/ticker/GOOGL/analysis HTTP/1.1[0m" 404 -
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for MSFT
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of MSFT
+127.0.0.1 - - [23/Aug/2025 03:22:39] "[33mGET /api/ticker/MSFT/analysis HTTP/1.1[0m" 404 -
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for AMZN
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of AMZN
+127.0.0.1 - - [23/Aug/2025 03:22:39] "[33mGET /api/ticker/AMZN/analysis HTTP/1.1[0m" 404 -
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for TSLA
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of TSLA
+127.0.0.1 - - [23/Aug/2025 03:22:39] "[33mGET /api/ticker/TSLA/analysis HTTP/1.1[0m" 404 -
+2025-08-23 03:22:39 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for NFLX
+2025-08-23 03:22:39 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for NVDA
+2025-08-23 03:22:39 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for META
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for NFLX
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for NVDA
+2025-08-23 03:22:39 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for AMD
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for META
+2025-08-23 03:22:39 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for INTC
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of NFLX
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of NVDA
+127.0.0.1 - - [23/Aug/2025 03:22:39] "[33mGET /api/ticker/NFLX/analysis HTTP/1.1[0m" 404 -
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of META
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for AMD
+127.0.0.1 - - [23/Aug/2025 03:22:39] "[33mGET /api/ticker/NVDA/analysis HTTP/1.1[0m" 404 -
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for INTC
+127.0.0.1 - - [23/Aug/2025 03:22:39] "[33mGET /api/ticker/META/analysis HTTP/1.1[0m" 404 -
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of AMD
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of INTC
+127.0.0.1 - - [23/Aug/2025 03:22:39] "[33mGET /api/ticker/AMD/analysis HTTP/1.1[0m" 404 -
+127.0.0.1 - - [23/Aug/2025 03:22:39] "[33mGET /api/ticker/INTC/analysis HTTP/1.1[0m" 404 -
+2025-08-23 03:22:39 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for GOOGL
+2025-08-23 03:22:39 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for MSFT
+2025-08-23 03:22:39 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for AAPL
+2025-08-23 03:22:39 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for TSLA
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for GOOGL
+2025-08-23 03:22:39 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for AMZN
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for MSFT
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for AAPL
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for GOOGL
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for TSLA
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for AMZN
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for MSFT
+127.0.0.1 - - [23/Aug/2025 03:22:39] "GET /api/ticker/GOOGL/prediction HTTP/1.1" 200 -
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for AAPL
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for TSLA
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for AMZN
+127.0.0.1 - - [23/Aug/2025 03:22:39] "GET /api/ticker/MSFT/prediction HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2025 03:22:39] "GET /api/ticker/AAPL/prediction HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2025 03:22:39] "GET /api/ticker/TSLA/prediction HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2025 03:22:39] "GET /api/ticker/AMZN/prediction HTTP/1.1" 200 -
+2025-08-23 03:22:39 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for META
+2025-08-23 03:22:39 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for NFLX
+2025-08-23 03:22:39 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for NVDA
+2025-08-23 03:22:39 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for AMD
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for META
+2025-08-23 03:22:39 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for INTC
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for NFLX
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for NVDA
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for AMD
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for META
+127.0.0.1 - - [23/Aug/2025 03:22:39] "GET /api/ticker/META/prediction HTTP/1.1" 200 -
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for INTC
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for NFLX
+127.0.0.1 - - [23/Aug/2025 03:22:39] "GET /api/ticker/NFLX/prediction HTTP/1.1" 200 -
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for NVDA
+127.0.0.1 - - [23/Aug/2025 03:22:39] "GET /api/ticker/NVDA/prediction HTTP/1.1" 200 -
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for AMD
+127.0.0.1 - - [23/Aug/2025 03:22:39] "GET /api/ticker/AMD/prediction HTTP/1.1" 200 -
+2025-08-23 03:22:39 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for INTC
+127.0.0.1 - - [23/Aug/2025 03:22:39] "GET /api/ticker/INTC/prediction HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2025 03:22:45] "GET /api/market-summary HTTP/1.1" 200 -
+10.2.16.11 - - [23/Aug/2025 03:23:40] "GET / HTTP/1.1" 200 -
+10.2.45.9 - - [23/Aug/2025 03:23:40] "GET / HTTP/1.1" 200 -
+10.2.45.9 - - [23/Aug/2025 03:23:40] "GET /api/status HTTP/1.1" 200 -
+10.2.45.9 - - [23/Aug/2025 03:23:40] "GET /api/forecast-summary HTTP/1.1" 200 -
+10.2.45.9 - - [23/Aug/2025 03:23:40] "GET /api/tickers HTTP/1.1" 200 -
+2025-08-23 03:23:40 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for AAPL
+10.2.45.9 - - [23/Aug/2025 03:23:40] "GET /api/tickers HTTP/1.1" 200 -
+2025-08-23 03:23:40 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for NVDA
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for AAPL
+2025-08-23 03:23:40 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for META
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for NVDA
+2025-08-23 03:23:40 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for AMD
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of AAPL
+2025-08-23 03:23:40 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for GOOGL
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for META
+10.2.45.9 - - [23/Aug/2025 03:23:40] "[33mGET /api/ticker/AAPL/analysis HTTP/1.1[0m" 404 -
+2025-08-23 03:23:40 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for NFLX
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of NVDA
+2025-08-23 03:23:40 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for MSFT
+10.2.45.9 - - [23/Aug/2025 03:23:40] "[33mGET /api/ticker/NVDA/analysis HTTP/1.1[0m" 404 -
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for AMD
+2025-08-23 03:23:40 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for INTC
+2025-08-23 03:23:40 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for AMZN
+2025-08-23 03:23:40 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for TSLA
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for GOOGL
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of META
+10.2.45.9 - - [23/Aug/2025 03:23:40] "[33mGET /api/ticker/META/analysis HTTP/1.1[0m" 404 -
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for NFLX
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for MSFT
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of AMD
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for INTC
+10.2.45.9 - - [23/Aug/2025 03:23:40] "[33mGET /api/ticker/AMD/analysis HTTP/1.1[0m" 404 -
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for AMZN
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of GOOGL
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for TSLA
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of NFLX
+10.2.45.9 - - [23/Aug/2025 03:23:40] "[33mGET /api/ticker/GOOGL/analysis HTTP/1.1[0m" 404 -
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of MSFT
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of INTC
+10.2.45.9 - - [23/Aug/2025 03:23:40] "[33mGET /api/ticker/NFLX/analysis HTTP/1.1[0m" 404 -
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of AMZN
+10.2.45.9 - - [23/Aug/2025 03:23:40] "[33mGET /api/ticker/MSFT/analysis HTTP/1.1[0m" 404 -
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of TSLA
+10.2.45.9 - - [23/Aug/2025 03:23:40] "[33mGET /api/ticker/INTC/analysis HTTP/1.1[0m" 404 -
+10.2.45.9 - - [23/Aug/2025 03:23:40] "[33mGET /api/ticker/AMZN/analysis HTTP/1.1[0m" 404 -
+10.2.45.9 - - [23/Aug/2025 03:23:40] "[33mGET /api/ticker/TSLA/analysis HTTP/1.1[0m" 404 -
+2025-08-23 03:23:40 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for GOOGL
+2025-08-23 03:23:40 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for META
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for GOOGL
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for GOOGL
+10.2.45.9 - - [23/Aug/2025 03:23:40] "GET /api/ticker/GOOGL/prediction HTTP/1.1" 200 -
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for META
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for META
+10.2.45.9 - - [23/Aug/2025 03:23:40] "GET /api/ticker/META/prediction HTTP/1.1" 200 -
+2025-08-23 03:23:40 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for MSFT
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for MSFT
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for MSFT
+10.2.45.9 - - [23/Aug/2025 03:23:40] "GET /api/ticker/MSFT/prediction HTTP/1.1" 200 -
+2025-08-23 03:23:40 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for NVDA
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for NVDA
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for NVDA
+10.2.45.9 - - [23/Aug/2025 03:23:40] "GET /api/ticker/NVDA/prediction HTTP/1.1" 200 -
+2025-08-23 03:23:40 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for AAPL
+2025-08-23 03:23:40 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for TSLA
+2025-08-23 03:23:40 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for NFLX
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for AAPL
+2025-08-23 03:23:40 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for AMZN
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for TSLA
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for AAPL
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for NFLX
+2025-08-23 03:23:40 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for AMD
+2025-08-23 03:23:40 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for INTC
+10.2.45.9 - - [23/Aug/2025 03:23:40] "GET /api/ticker/AAPL/prediction HTTP/1.1" 200 -
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for AMZN
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for TSLA
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for NFLX
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for AMD
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for INTC
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for AMZN
+10.2.45.9 - - [23/Aug/2025 03:23:40] "GET /api/ticker/TSLA/prediction HTTP/1.1" 200 -
+10.2.45.9 - - [23/Aug/2025 03:23:40] "GET /api/ticker/NFLX/prediction HTTP/1.1" 200 -
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for AMD
+2025-08-23 03:23:40 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for INTC
+10.2.45.9 - - [23/Aug/2025 03:23:40] "GET /api/ticker/AMZN/prediction HTTP/1.1" 200 -
+10.2.45.9 - - [23/Aug/2025 03:23:40] "GET /api/ticker/AMD/prediction HTTP/1.1" 200 -
+10.2.45.9 - - [23/Aug/2025 03:23:40] "GET /api/ticker/INTC/prediction HTTP/1.1" 200 -
+10.2.45.9 - - [23/Aug/2025 03:23:42] "GET /api/market-summary HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2025 03:27:25] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2025 03:27:25] "GET /api/tickers HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2025 03:27:25] "GET /api/forecast-summary HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2025 03:27:25] "GET /api/tickers HTTP/1.1" 200 -
+2025-08-23 03:27:25 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for GOOGL
+2025-08-23 03:27:25 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for AAPL
+2025-08-23 03:27:25 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for TSLA
+2025-08-23 03:27:25 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for MSFT
+2025-08-23 03:27:25 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for AMZN
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for GOOGL
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for AAPL
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for TSLA
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for MSFT
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of GOOGL
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for AMZN
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of AAPL
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of TSLA
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of MSFT
+127.0.0.1 - - [23/Aug/2025 03:27:25] "[33mGET /api/ticker/GOOGL/analysis HTTP/1.1[0m" 404 -
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of AMZN
+127.0.0.1 - - [23/Aug/2025 03:27:25] "[33mGET /api/ticker/AAPL/analysis HTTP/1.1[0m" 404 -
+127.0.0.1 - - [23/Aug/2025 03:27:25] "[33mGET /api/ticker/TSLA/analysis HTTP/1.1[0m" 404 -
+127.0.0.1 - - [23/Aug/2025 03:27:25] "[33mGET /api/ticker/MSFT/analysis HTTP/1.1[0m" 404 -
+2025-08-23 03:27:25 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for META
+127.0.0.1 - - [23/Aug/2025 03:27:25] "[33mGET /api/ticker/AMZN/analysis HTTP/1.1[0m" 404 -
+2025-08-23 03:27:25 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for NVDA
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for META
+2025-08-23 03:27:25 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for NFLX
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for NVDA
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of META
+2025-08-23 03:27:25 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for AMD
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for NFLX
+127.0.0.1 - - [23/Aug/2025 03:27:25] "[33mGET /api/ticker/META/analysis HTTP/1.1[0m" 404 -
+2025-08-23 03:27:25 | INFO | src.stock_analysis.analyzer:generate_daily_analysis:353 - Generating daily analysis for INTC
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of NVDA
+2025-08-23 03:27:25 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for AAPL
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of NFLX
+127.0.0.1 - - [23/Aug/2025 03:27:25] "[33mGET /api/ticker/NVDA/analysis HTTP/1.1[0m" 404 -
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for AMD
+127.0.0.1 - - [23/Aug/2025 03:27:25] "[33mGET /api/ticker/NFLX/analysis HTTP/1.1[0m" 404 -
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for INTC
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for AAPL
+2025-08-23 03:27:25 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for GOOGL
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of AMD
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.analyzer:generate_daily_analysis:359 - No data available for analysis of INTC
+2025-08-23 03:27:25 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for MSFT
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for AAPL
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for GOOGL
+127.0.0.1 - - [23/Aug/2025 03:27:25] "[33mGET /api/ticker/AMD/analysis HTTP/1.1[0m" 404 -
+127.0.0.1 - - [23/Aug/2025 03:27:25] "[33mGET /api/ticker/INTC/analysis HTTP/1.1[0m" 404 -
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for MSFT
+127.0.0.1 - - [23/Aug/2025 03:27:25] "GET /api/ticker/AAPL/prediction HTTP/1.1" 200 -
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for GOOGL
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for MSFT
+127.0.0.1 - - [23/Aug/2025 03:27:25] "GET /api/ticker/MSFT/prediction HTTP/1.1" 200 -
+2025-08-23 03:27:25 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for TSLA
+127.0.0.1 - - [23/Aug/2025 03:27:25] "GET /api/ticker/GOOGL/prediction HTTP/1.1" 200 -
+2025-08-23 03:27:25 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for AMZN
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for TSLA
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for TSLA
+127.0.0.1 - - [23/Aug/2025 03:27:25] "GET /api/ticker/TSLA/prediction HTTP/1.1" 200 -
+2025-08-23 03:27:25 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for META
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for META
+2025-08-23 03:27:25 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for NVDA
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for AMZN
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for META
+127.0.0.1 - - [23/Aug/2025 03:27:25] "GET /api/ticker/META/prediction HTTP/1.1" 200 -
+2025-08-23 03:27:25 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for NFLX
+2025-08-23 03:27:25 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for AMD
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for NVDA
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for AMZN
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for NFLX
+127.0.0.1 - - [23/Aug/2025 03:27:25] "GET /api/ticker/AMZN/prediction HTTP/1.1" 200 -
+2025-08-23 03:27:25 | INFO | src.stock_analysis.predictor:train_model:99 - Training random_forest model for INTC
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for AMD
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for NVDA
+127.0.0.1 - - [23/Aug/2025 03:27:25] "GET /api/ticker/NVDA/prediction HTTP/1.1" 200 -
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for NFLX
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.analyzer:get_stock_data_with_indicators:73 - No stock data found for INTC
+127.0.0.1 - - [23/Aug/2025 03:27:25] "GET /api/ticker/NFLX/prediction HTTP/1.1" 200 -
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for INTC
+127.0.0.1 - - [23/Aug/2025 03:27:25] "GET /api/ticker/INTC/prediction HTTP/1.1" 200 -
+2025-08-23 03:27:25 | WARNING | src.stock_analysis.predictor:train_model:105 - Insufficient data for training model for AMD
+127.0.0.1 - - [23/Aug/2025 03:27:25] "GET /api/ticker/AMD/prediction HTTP/1.1" 200 -
+127.0.0.1 - - [23/Aug/2025 03:27:27] "GET /api/market-summary HTTP/1.1" 200 -

@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  stock-sentiment-analyzer:
+    build: .
+    ports:
+      - "12000:12000"
+    environment:
+      - FLASK_HOST=0.0.0.0
+      - FLASK_PORT=12000
+      - FLASK_DEBUG=false
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./models:/app/models
+      - ./.env:/app/.env
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:12000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  scheduler:
+    build: .
+    command: ["python", "scheduler.py"]
+    environment:
+      - PYTHONPATH=/app/src
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./models:/app/models
+      - ./.env:/app/.env
+    restart: unless-stopped
+    depends_on:
+      - stock-sentiment-analyzer
+
+volumes:
+  data:
+  logs:
+  models:

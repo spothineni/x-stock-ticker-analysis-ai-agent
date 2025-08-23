@@ -1,0 +1,53 @@
+# Twitter/X API and social media
+tweepy==4.14.0
+python-twitter-v2==0.7.7
+
+# Financial data APIs
+yfinance==0.2.28
+alpha-vantage==2.3.1
+pandas-datareader==0.10.0
+
+# Data processing and analysis
+pandas>=2.0.0
+numpy>=1.25.0
+scikit-learn>=1.3.0
+scipy>=1.11.0
+
+# Sentiment analysis and NLP
+textblob>=0.17.0
+vaderSentiment>=3.3.0
+transformers>=4.30.0
+torch>=2.0.0
+
+# Database and storage
+sqlalchemy>=2.0.0
+pymongo>=4.0.0
+
+# Web framework and API
+flask>=3.0.0
+flask-cors>=4.0.0
+requests>=2.31.0
+
+# Scheduling and automation
+schedule==1.2.0
+celery==5.3.4
+
+# Data visualization
+matplotlib==3.8.2
+plotly==5.17.0
+seaborn==0.13.0
+
+# Configuration and environment
+python-dotenv==1.0.0
+pyyaml==6.0.1
+
+# Logging and monitoring
+loguru==0.7.2
+
+# Date and time handling
+python-dateutil==2.8.2
+pytz==2023.3
+
+# Testing
+pytest==7.4.3
+pytest-cov==4.1.0

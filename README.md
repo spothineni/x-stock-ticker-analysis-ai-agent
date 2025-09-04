@@ -301,5 +301,45 @@ For support and questions:
 - Open an issue on GitHub
 
 ---
+Here’s a polished prompt template you can use for publishing a news digest. It’s structured so you can easily adapt it whether you’re summarizing financial markets, tech updates, politics, or general world news:
 
+⸻
+
+📰 Daily News Digest Prompt
+
+Instruction for AI:
+“Generate a professional, concise, and engaging news digest. The digest should cover the most important developments across categories: [Finance/Markets], [Technology], [Politics/Policy], [World Affairs], [Science/Health], and [Lifestyle/Entertainment].
+
+Tone: Clear, factual, neutral, and accessible for a general audience.
+
+Format Requirements:
+	1.	Headline-style section headers for each category.
+	2.	3–4 bullet points per category with the top updates.
+	3.	Each bullet: one sentence summary, optionally followed by a one-line context/impact statement.
+	4.	If financial/market data is included, format numbers cleanly (e.g., Dow +0.5%, Oil $82/barrel).
+	5.	Keep total digest under 400 words.
+
+Example Output Structure:
+
+⸻
+
+Markets & Economy
+	•	Stocks climb on Fed outlook – U.S. markets rose after Powell signaled no immediate rate hikes.
+	•	Oil slips below $80 – Weak demand forecasts weighed on crude prices.
+
+Technology
+	•	Apple unveils AI-powered iPhone features – Expected to roll out in iOS 19.
+	•	NVIDIA expands data center dominance – New GPU lineup targets AI workloads.
+
+Politics & Policy
+	•	Congress debates AI regulation – Lawmakers consider stricter guardrails for generative AI.
+	•	U.S.-China trade talks stall – Tariff disputes remain unresolved.
+
+⸻
+
+You can adapt this by adding/removing categories depending on your audience.
+
+⸻
+
+Do you want me to create a reusable version of this prompt tailored to your focus (e.g., daily market & tech digest for investors), or do you want a general all-news version?
 **Disclaimer**: This tool is for educational and research purposes only. Do not use it as the sole basis for investment decisions. Always consult with financial professionals and do your own research before making investment decisions.
